@@ -1,0 +1,15 @@
+sudo: required
+language: go
+go: 1.9.4
+services:
+- docker
+install:
+- sudo service mysql stop
+- sudo service postgresql stop
+- make tools
+script:
+- make test-db
+- make build
+notifications:
+  slack:
+    secure: SOATNYAMgaryKHit4l48/x/PBwXK9Iy57PxJy9SQoZe3ua8ZIyOXjDfsjGc/TgtQ8SP+FWhosQfUVuiwP0seakMv7+CgxivPvf84UktHRBgqX/BXsW3mqgrZN4NjVTjMPgES7yBtVfqs+witUsG6xWpVlCYQcPiq/Posigp9X13epIFY7RcnfKlvPfp8Eppb203huv2CUJIol/lJ71brc6j5akBaL7IXf/EFzkkz43svgaT4SWyyQhFDZTryo4Q0MJysXclcOduemdoXLmmxEc1tkCz64rt+Z6iom5AVrdJTkTbivP9lDHJkC1N0u0JIbNUZwDynenFADSZOLTbznUmQIIDrbUcOfPQ7RnlXW8KuZLFG24Fa/u0p7urdBo5JrBaZJusRr4z+rk/JPST0wWDYlFZ3bfbiU6tx5YtF6IuUkeYqxoVNVnM7tfJ/QV6JpZ0TD7+kmXaERFNbbJwkeVxOT8m101RtjuPZcpYqgHWrRySI/zuS5Whjj7CGfPcPQ7Vxfn0QoLOl0sYYqzwZR7ZWNi/5TCyZImES0yB0U1mzhbeF+RK4bJQahkpO3ShCB4I2vEQ3UffPEa4hgIHiOiAv3yE4ZMDP5FlHDOCe7m7nD0FyxU5B77nwzHddfEHcEG0hCeUikwpiJjfPC1bUmcsd2GynxjYxb5J+QTq8F6U=

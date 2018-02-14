@@ -1,0 +1,9 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  name: my-mariadb-binding
+  namespace: default
+spec:
+  instanceRef:
+    name: my-mariadb-instance
+  secretName: my-mariadb-secret

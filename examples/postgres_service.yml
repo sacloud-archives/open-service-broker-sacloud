@@ -1,0 +1,13 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  name: my-postgres-instance
+  namespace: default
+spec:
+  clusterServiceClassExternalName: sacloud-postgres
+  clusterServicePlanExternalName: db-10g
+  parameters:
+    switch_id: <your-switch-id>
+    ipaddress: "<your-db-private-ip>"
+    mask_len: <your-db-mask-len>
+    default_route: "<your-db-default-route-ip>"
