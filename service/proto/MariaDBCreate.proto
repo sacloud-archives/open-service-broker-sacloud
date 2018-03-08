@@ -1,0 +1,13 @@
+syntax = "proto3";
+package schema;
+
+message MariaDBCreateParameter {
+    int64 switch_id                = 1; // required
+    string ipaddress               = 2; // required
+	int32 mask_len                 = 3; // required
+	string default_route           = 4; // required
+	string user_name               = 5; // optional(default: random20[a-zA-Z])
+    int32 port                     = 6; // optional(default: 3306)
+	string backup_time             = 7; // optional(default: empty)
+	repeated string allow_networks = 8; // optional(default: empty)
+}
