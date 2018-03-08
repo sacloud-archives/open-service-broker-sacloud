@@ -81,7 +81,7 @@ func TestPostgreSQLServiceValidate(t *testing.T) {
 
 func TestPostgreSQLHandler_prepareMetaTable(t *testing.T) {
 	if !existsTestEnvVars("TEST_DB") {
-		t.Skipf("Environemnt variable %q is empty. skip.", "TEST_DB")
+		t.Skipf("environment variable %q is empty. skip.", "TEST_DB")
 		return
 	}
 
@@ -126,7 +126,7 @@ func TestPostgreSQLHandler_prepareMetaTable(t *testing.T) {
 
 func TestPostgreSQLHandler_create_read_delete(t *testing.T) {
 	if !existsTestEnvVars("TEST_DB") {
-		t.Skipf("Environemnt variable %q is empty. skip.", "TEST_DB")
+		t.Skipf("environment variable %q is empty. skip.", "TEST_DB")
 		return
 	}
 
