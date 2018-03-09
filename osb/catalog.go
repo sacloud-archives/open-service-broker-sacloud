@@ -1,5 +1,6 @@
 package osb
 
+// Catalog represents object of OpenServiceBroker API
 type Catalog struct {
 	Services []*Service `json:"services"`
 }

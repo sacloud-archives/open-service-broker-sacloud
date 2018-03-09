@@ -45,7 +45,7 @@ test-db: lint
 
 .PHONY: lint
 lint: fmt
-	gometalinter --vendor --skip=osb --cyclo-over=15 --disable=gas --disable=maligned --deadline=2m ./...
+	gometalinter --vendor --cyclo-over=15 --disable=gas --disable=maligned --deadline=2m ./...
 	@echo
 
 .PHONY: fmt
