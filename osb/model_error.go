@@ -1,6 +1,6 @@
 package osb
 
-// Error is service broker api error
+// Error represents object of OpenServiceBroker API
 //
 // See [Service Broker Errors](https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors) for more details.
 type Error struct {
