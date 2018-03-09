@@ -34,10 +34,10 @@ var (
 	mariaDBTestSwitchID    = 999999999999
 	validProvisioningParam = `
     	{
-    		"switch_id" : 123456789012,
+    		"switchID" : 123456789012,
     		"ipaddress" : "192.2.0.10",
-    		"mask_len" : 24,
-    		"default_route" : "192.2.0.1"
+    		"maskLen" : 24,
+    		"defaultRoute" : "192.2.0.1"
 	    }`
 )
 

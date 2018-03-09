@@ -52,10 +52,10 @@ spec:
   clusterServiceClassExternalName: sacloud-mariadb
   clusterServicePlanExternalName: db-10g
   parameters:
-    switch_id: <put-your-switch-id>
+    switchID: <put-your-switch-id>
     ipaddress: "<put-your-database-ipaddress>"
-    mask_len: <put-your-database-nw-mask-len>
-    default_route: "<put-your-database-def-route-ipaddress>"
+    maskLen: <put-your-database-nw-mask-len>
+    defaultRoute: "<put-your-database-def-route-ipaddress>"
 ```
 
 ```bash

@@ -7,7 +7,7 @@ spec:
   clusterServiceClassExternalName: sacloud-postgres
   clusterServicePlanExternalName: db-10g
   parameters:
-    switch_id: <your-switch-id>
+    switchID: <your-switch-id>
     ipaddress: "<your-db-private-ip>"
-    mask_len: <your-db-mask-len>
-    default_route: "<your-db-default-route-ip>"
+    maskLen: <your-db-mask-len>
+    defaultRoute: "<your-db-default-route-ip>"

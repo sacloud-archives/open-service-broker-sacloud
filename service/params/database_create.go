@@ -10,10 +10,10 @@ import (
 func (p *DatabaseCreateParameter) Validate() error {
 
 	required := map[string]interface{}{
-		"switch_id":     p.SwitchID,
-		"ipaddress":     p.IPAddress,
-		"mask_len":      p.MaskLen,
-		"default_route": p.DefaultRoute,
+		"switchID":     p.SwitchID,
+		"ipaddress":    p.IPAddress,
+		"maskLen":      p.MaskLen,
+		"defaultRoute": p.DefaultRoute,
 	}
 
 	for k, v := range required {
@@ -23,8 +23,8 @@ func (p *DatabaseCreateParameter) Validate() error {
 	}
 
 	needIPv4 := map[string]string{
-		"ipaddress":     p.IPAddress,
-		"default_route": p.DefaultRoute,
+		"ipaddress":    p.IPAddress,
+		"defaultRoute": p.DefaultRoute,
 	}
 
 	for k, v := range needIPv4 {

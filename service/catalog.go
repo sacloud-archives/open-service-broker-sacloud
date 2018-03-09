@@ -65,31 +65,31 @@ const (
     {
     	"$schema": "http://json-schema.org/draft-04/schema#",
         "properties": {
-            "allow_networks": {
+            "allowNetworks": {
                 "items": {
                     "type": "string"
                 },
                 "type": "array"
             },
-            "backup_time": {
+            "backupTime": {
                 "type": "string"
             },
-            "default_route": {
+            "defaultRoute": {
                 "type": "string"
             },
             "ipaddress": {
                 "type": "string"
             },
-            "mask_len": {
+            "maskLen": {
                 "type": "integer"
             },
             "port": {
                 "type": "integer"
             },
-            "switch_id": {
+            "switchID": {
                 "type": "integer"
             },
-            "user_name": {
+            "username": {
                 "type": "string"
             }
         },
