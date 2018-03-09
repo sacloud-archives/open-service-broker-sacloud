@@ -43,7 +43,7 @@ func (c *dbApplianceClient) Create(instanceID string, param *params.DatabaseCrea
 	p := c.createParamFunc()
 	p.Plan = sacloud.DatabasePlan(param.PlanID)
 	p.SwitchID = fmt.Sprintf("%d", param.SwitchID)
-	p.DefaultUser = param.UserName
+	p.DefaultUser = param.Username
 	if p.DefaultUser == "" {
 		p.DefaultUser = random.String(10)
 	}

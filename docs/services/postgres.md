@@ -23,10 +23,10 @@ Provisions a new PostgreSQL appliance instance.
 
 | Parameter Name | Type | Description | Required | Default Value |
 |----------------|------|-------------|----------|---------------|
-| `switch_id` | `int64` | ID of the switch to which the database connects. | Required | Switch must be reachable from within the kubernetes cluster.|
+| `switchID` | `int64` | ID of the switch to which the database connects. | Required | Switch must be reachable from within the kubernetes cluster.|
 | `ipaddress` | `string` | IP address to assign to the database. | Required | IP address must be reachable from within the kubernetes cluster. |
-| `mask_len` | `int` | Network mask length to assign to the database. | Required | -|
-| `default_route` | `string` | Default route IP address to assign to the database. | Required | -|
+| `maskLen` | `int` | Network mask length to assign to the database. | Required | -|
+| `defaultRoute` | `string` | Default route IP address to assign to the database. | Required | -|
 | `port`          | `int` | The port number on which the database listens | N| `3306`|
 
 ##### Bind
