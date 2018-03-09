@@ -64,15 +64,15 @@ Deletes the MariaDB appliance.
 ##### Examples
 
 
-The `examples/mariadb-service.yml` can be used to provision the `sacloud-10g` plan.
+The `examples/mariadb-service.yaml` can be used to provision the `sacloud-10g` plan.
 This can be done with the following example:
 
 ```console
 # Put your SAKURA Cloud resource settings to service instance definition
-vi examples/mariadb-service.yml
+vi examples/mariadb-service.yaml
 
 # create service
-kubectl create -f examples/mariadb-service.yml
+kubectl create -f examples/mariadb-service.yaml
 ```
 
 You can then create a binding with the following command:
