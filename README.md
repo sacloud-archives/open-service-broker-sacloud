@@ -39,7 +39,7 @@ For example, the following will provision MariaDB on SAKURA Cloud:
 
 ```bash
 # Put your SAKURA Cloud resource settings to service instance definition
-$ vi examples/mariadb-service.yml
+$ vi examples/mariadb-service.yaml
 ```
 
 ```console
@@ -60,7 +60,7 @@ spec:
 
 ```bash
 # Provision MariaDB using service catalog
-$ kubectl create -f examples/mariadb-service.yml
+$ kubectl create -f examples/mariadb-service.yaml
 ```
 
 After the ServiceInstance resource is submitted, you can view its status:
@@ -81,7 +81,7 @@ that status will change to indicate that asynchronous provisioning is complete.
 Upon provision success, bind to the instance:
 
 ```bash
-$ kubectl create -d examples/mariadb-binding.yml
+$ kubectl create -d examples/mariadb-binding.yaml
 ```
 
 To check the status of the binding:
@@ -110,7 +110,7 @@ This secret can be used just as any other.
 To unbind:
 
 ```bash
-$ kubectl delete -f examples/mariadb-binding.yml
+$ kubectl delete -f examples/mariadb-binding.yaml
 ```
 
 ### Deprovisioning
@@ -118,7 +118,7 @@ $ kubectl delete -f examples/mariadb-binding.yml
 To deprovision:
 
 ```bash
-$ kubectl delete -f examples/mariadb-service.yml
+$ kubectl delete -f examples/mariadb-service.yaml
 ```
 
 ## Debug Service Broker 

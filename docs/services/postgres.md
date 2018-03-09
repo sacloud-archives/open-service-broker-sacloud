@@ -63,15 +63,15 @@ Deletes the PostgreSQL appliance.
 
 ##### Examples
 
-The `examples/postgres-service.yml` can be used to provision the `sacloud-10g` plan.
+The `examples/postgres-service.yaml` can be used to provision the `sacloud-10g` plan.
 This can be done with the following example:
 
 ```console
 # Put your SAKURA Cloud resource settings to service instance definition
-vi examples/postgres-service.yml
+vi examples/postgres-service.yaml
 
 # create service
-kubectl create -f examples/postgres-service.yml
+kubectl create -f examples/postgres-service.yaml
 ```
 
 You can then create a binding with the following command:
