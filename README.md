@@ -135,7 +135,7 @@ $ kubectl logs -f --namespace=osbs <service-broker-pod-name>
 
 ## License
 
- `open-service-broker-sacloud` Copyright (C) 2018 Kazumichi Yamamoto.
+ `open-service-broker-sacloud` Copyright (C) 2018-2019 Kazumichi Yamamoto.
 
   This project is published under [Apache 2.0 License](LICENSE.txt).
   
